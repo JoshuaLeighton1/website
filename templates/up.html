@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<title>Roelf Project Management Systems</title>
+{%endblock%}
+
+{%block body%}
+    <body id = "bodyUpdate">
+        <div id = "searchProj">
+        <h1>Edit an existing project</h1>
+        <form name = "update" class = "box" action = "/up", method = "POST">
+            <p>please enter the project ID of the project you would like to edit</p>
+            <input type ="text" id = "number" name = "number" placeholder = "Project Number...">
+            <input onclick = "hideScript()" type = "submit" class = "submission" value = "submit">
+         
+        </form>
+        <script>
+            function hideScript() {
+               document.forms['update'].addEventListener('submit', function(event) {
+                   this.style['display'] = "none";
+                   event.preventDefault()
+               });
+            }
+        </script>
+        {%for project in proj%}
+        {%if project.proj_num == numb%}
+        <table class = "updateT">
+            <tr>
+                <th>Project Name</th>
+                <th>Project Number</th>
+                <th>Project Type</th>
+                <th>Physical Address</th>
+                <th>Customer ID</th>
+                <th>Engineer ID</th>
+                <th>Architect ID</th>
+                <th>Project Manager ID</th>
+                <th>ERF number</th>
+                <th>Total cost</th>
+                <th>Amount Paid</th>
+                <th>Deadline</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>{{project.project_name}}</td>
+                <td>{{ project.proj_num }}</td>
+                <td>{{ project.Typ }}</td>
+                <td>{{ project.physical_address }}</td>
+                <td><a href = "">{{ project.Customer_ID }}</a></td>
+                <td><a href = "">{{ project.Engineer_ID }}</a></td>
+                <td><a href = "">{{ project.Architect_ID }}</a></td>
+                <td>{{ project.Manager_ID }}</td>
+                <td>{{ project.ERF_num }}</td>
+                <td>{{ project.Total }}</td>
+                <td><a href = "">{{ project.Amount_paid }}</a></td>
+                <td>{{ project.Deadline }}</td>
+                <td><a href = "">{{ project.complete }}</a></td>
+            </tr>
+        </table>
+        <p>To edit a project please click on the links in the table</p>
+
+        {%endif%}
+        {%endfor%}
+    </div>
+</body>
+{%endblock%}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<title>Roelf Project Management Systems</title>
+{%endblock%}
+
+{%block body%}
+<body id = "regFormBod">
+    <div class = "regPage">
+        <form class ="boxReg" action ="/reg" method = "POST">
+            <h1>Register a new project</h1>
+            <input type = "text" name = "name" placeholder = "Project Name...">
+            <input type = "text" name ="number" placeholder = "Project Number...">
+            <input type = "text" name = "type" placeholder = "Type...">
+            <input type = "text" name = "ad" placeholder = "Physical address...">
+            <input type = "text" name = "custID" placeholder = "Customer ID...">
+            <input type = "text" name = "engID" placeholder = "Engineer ID...">
+            <input type = "text" name = "archID" placeholder = "Architect ID...">
+            <input type = "text" name = "manID" placeholder = "Project Manager ID...">
+            <input type = "text" name = "ERF" placeholder = "ERF number...">
+            <input type = "text" name = "total" placeholder = "Total cost...">
+            <input type = "text" name = "amount" placeholder = "Amount paid to date...">
+            <input type = "text" name = "deadline" placeholder = "Deadline...">
+            <input type = "text" name = "complete" placeholder = "task complete?...">
+            <input type = "submit" value = "submit">
+        </form>
+    </div>
+</body>
+    
+{%endblock%}

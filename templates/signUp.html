@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<title>Roelf Project Management Systems</title>
+{%endblock%}
+
+{%block body%}
+    <body id = "signBody">
+    <div class = "signup">
+        <form class ="box" method = "POST" action = "">
+            <h1>Sign Up</h1>
+            {{form.hidden_tag() }}
+            {{ form.username }}
+            {{ form.password }}
+            {{ form.submit }}
+            <a href = "/Login">Already have an account? Login in</a>
+        </form>
+    </div>
+</body>
+    
+{%endblock%}

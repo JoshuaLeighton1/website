@@ -1,0 +1,490 @@
+#loginBody{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#34495e;
+}
+#signBody{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#34495e;
+}
+#regFormBod {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#34495e;
+}
+#bodyUpdate {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#34495e;
+    align-items: center;
+
+}
+#bodyUpdate h1 {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size:20px;
+}
+.content {
+    text-align:center;
+}
+.links {
+    list-style-type:none;
+    font-size:20px;
+    padding: 50px 10px 10px 10px;
+}
+
+.findProj {
+    text-align:center;
+}
+.updateT {
+    font-size: 12px;
+    padding-top:25px;
+}
+.updateT tr, td, th{
+    text-align:center;
+    padding: 5px;
+    border: 1px solid black;
+    border-spacing: 0px 10px;
+}
+
+
+#bottom {
+    position: absolute;
+    text-align: center;
+    bottom:0px;
+    left: 50%;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    text-align:center;
+    color: black;
+}
+.wrapper {
+    width: 1170px;
+    margin:0 auto;
+}
+header{
+    height:100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;   
+}
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: bignoodletitling;
+    color: #fff;
+    letter-spacing: 5px;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a {
+    text-decoration:none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size:20px;
+    margin:0 10px;
+    color: #fff;
+}
+
+.banner-area{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(stock1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    animation-name: banner;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+@keyframes banner{
+    0% {
+        background-image: url(stock1.jpg);
+    }
+    20% {
+        background-image: url(stock2.jpg);
+    }
+    40% {
+        background-image: url(stock3.jpg);
+    }
+    60% {
+        background-image: url(stock4.jpg);
+    }
+    80% {
+        background-image: url(stock5.jpg);
+    }
+    100% {
+        background-image: url(stock1.jpg);
+    }
+
+}
+
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #ddd;
+    height: 1500px;
+}
+.content-area h2{
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+.content-area p{
+    padding: 2% 0;
+    font-family: merienda;
+    line-height: 30px;
+}
+.boxReg {
+    width: 300px;
+    padding: 30px;
+    position: fixed;
+    font-size: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+.boxReg input[type = "text"]{
+    border:0;
+    font-size: 10px;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 5px 5px;
+    width: 200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.boxReg input[type = "text"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.boxReg input[type = "submit"] {
+    border:0;
+    font-size:10px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 10px 30px;
+    width: 200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.boxReg input[type ="submit"]:hover {
+    background: #2ecc71;
+}
+.boxReg a{
+    text-decoration: none;
+    color: white;
+}
+.boxReg h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+    
+.boxReg::-webkit-scrollbar{
+    width:10px;
+}
+.boxReg::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+.boxReg::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background-color: #009578;
+}
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+.box p {
+    color: white;
+}
+.box input[type = "text"], .box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box a{
+    text-decoration: none;
+    color: white;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box input[type = "submit"] {
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type ="submit"]:hover {
+    background: #2ecc71;
+}
+
+#dash {
+    min-height: 100vh;
+}
+#dash a {
+    text-decoration: none;
+}
+#dash li {
+    list-style:none;
+}
+
+h1, h2 {
+    color: #444;
+    text-align:center
+}
+h3 {
+    color: #999;
+}
+
+.btn {
+    background-color: #262626;
+    color: white;
+    padding: 5px 10px;
+    text-align: center
+}
+
+.btn:hover {
+    color: #f05462;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+.side-menu {
+    position: fixed;
+    background:#262626;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center
+}
+.side-menu li:hover {
+    background: white;
+    color: #f05462;
+}
+.side-menu li a{
+    text-decoration:none;
+    color: white;
+}
+
+.dashContainer {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+
+}
+.dashContainer .dashHead{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.dashContainer .dashHead .nav{
+    width: 90%;
+    display: flex;
+    align-items:center;
+}
+.dashContainer .dashHead .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.dashContainer .dashHead .nav .search input[type = text] {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+}
+
+.dashContainer .dashHead .nav .search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashContainer .dashHead .nav .search button img{
+    width: 30px;
+    height: 30px;
+}
+
+.dashContainer .dashHead .nav .user{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.dashContainer .dashContent{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+.dashContainer .dashContent .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dashContainer .dashContent .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.dashContainer .dashContent .dashContent2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.dashContainer .dashContent .dashContent2 .recent-payments{
+    min-height:50vh;
+    flex:5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#searchProj {
+    display:block;
+}
+
+#searchProj .updateT {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
